@@ -1,0 +1,13 @@
+# application.yml
+spring:
+  application:
+    name: spring_cloud_test_config_server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Halkrine/SpringCloudConfig.git
+          default-label: main
+
+server:
+  port: 8080
